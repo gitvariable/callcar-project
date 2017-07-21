@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../Scripts/jquery-3.1.1.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.js"></script>
+    <link href="Content/NMRStyle.css" rel="stylesheet" />
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#check').addClass('hidden');
+            var isHidden=true;
+            $('#checkbox1').click(function () {
+                if ($('#checkbox1').is(':checked')) {
+                    $('#check').removeClass('hidden');
+                    isHidden = true;
+                } else {
+                    $('#check').removeClass('hidden').addClass('hidden');
+                    isHidden = false;
+                }
+            }
+            );
+            if ($('#checkbox1').is(':checked')) {
+                $('#check').removeClass('hidden');
+                isHidden = true;
+            } else {
+                $('#check').removeClass('hidden').addClass('hidden');
+                isHidden = false;
+            }
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-center" style="width:auto;height:auto;font-weight:900;font-size:20pt;font-family:標楷體;">
+            註&emsp;冊&emsp;功&emsp;能&emsp;使&emsp;用&emsp;條&emsp;款
+        </h1>
+            
+            <div style="border:2px solid;width:auto;height:auto;font-size:13pt;font-family:標楷體;">
+                <div>
+                    歡迎註冊成為南訓大車隊會員（下稱會員）。
+                </div>
+                <div>
+                    為了保護會員權益，並為服務提供依據，請詳細閱讀本註冊功能使用條款之所有內容。
+                </div>
+                <div>南訓大車隊（下稱本車隊）註冊功能使用條款（版本:2017.05）</div>
+                <div>第一條：</div>
+                <div>註冊申請人於完成註冊申請作業並經本車隊確認成為本車隊之會員後，得參與本車隊提供之相關活動或享受相關優惠。</div>
+                <br />
+                <div>第二條：</div>
+                <div>註冊申請人提供之個人資料，同意由註冊功能之系統資料庫所保存。若有任何爭議，註冊申請人同意以系統資料庫所保存之電子資料為認定標準。</div>
+                <br />
+                <div>第三條：</div>
+                <div>註冊申請人應確保提供之個人資料均屬真實（第一項）。</div>
+                <div>註冊申請人若提供不實之個人資料，本車隊將暫停或終止會員資格，並拒絕使用各項會員服務功能（第二項）。</div>
+                <div>個人資料有誤填或變更時，會員應隨時向本車隊更正或更新。如會員未及時更新，表示同意本車隊繼續依原個人資料提供各項服務（第三項）。</div>
+                <div>會員發現或合理懷疑有第三人使用會員資料時，應立即通知本車隊，本車隊將採取必要之應對措施（第四項）。</div>
+                <div>前項情形，若會員之個人資料遭受第三人冒用致影響交易安全時，本車隊將暫停會員帳號之使用，必要時並將刪除會員註冊資料（第五項）。</div>
+                <br />
+                <div>第四條：</div>
+                <div>
+                    本車隊得於營運期間及經營地區內，於與會員管理、統計調查分析等合理相關連之特定目的內，蒐集、處理及利用包括但不限於會員之姓名、行動電話、地址、生日等基本資料及使用會員之個人資料，
+                    提供會員各種相關活動或優惠。但會員若表示不同意或要求停止對其進行提供各種相關資訊時，本車隊不得拒絕且不影響會員之權益。
+                </div>
+                <br />
+                <div>第五條：</div>
+                <div>為維護會員權益，如系統出現異常情況時，本車隊將逕行暫停或中斷會員操作之相關功能全部或一部，直至排除異常情況。</div>
+                <br />
+                <div>第六條：</div>
+                <div>本車隊保有會員申請、停用、修改或終止各項優惠服務之權利。</div>
+                <br />
+                <div>第七條：</div>
+                <div>關於使用註冊功能及本系統其他功能所生之爭議，註冊申請人同意以中華民國法律為準據法，且以高雄地方法院為管轄法院。</div>
+            </div>
+            <div class="checkbox">
+            <label style="font-size:18pt;font-weight:800;">
+                <input id="checkbox1" type="checkbox" data-title="勾選遵守內容方能進行預約乘車功能" />
+                本人願意遵守南訓大車隊註冊功能使用條款之內容
+            </label>
+            </div>
+            <div class="text-center">
+                <a a href="Index.aspx" class="btn btn-default btn-lg">取消</a>&emsp;&emsp;
+                <a href="customer_register.aspx" id="check" class="btn btn-danger btn-lg">確定</a>
+               
+             </div>
+            <br />
+        </div>
+
+</body>
+</html>

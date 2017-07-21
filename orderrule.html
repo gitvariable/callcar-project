@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.1.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <link href="../NMRStyle.css" rel="stylesheet" />
+    <style>
+    .hidden{
+    display:none;
+    }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#check').addClass('hidden');
+            var isHidden=true;
+            $('#checkbox1').click(function () {
+                if ($('#checkbox1').is(':checked')) {
+                    $('#check').removeClass('hidden');
+                    isHidden = true;
+                } else {
+                    $('#check').removeClass('hidden').addClass('hidden');
+                    isHidden = false;
+                }
+            }
+            );
+            if ($('#checkbox1').is(':checked')) {
+                $('#check').removeClass('hidden');
+                isHidden = true;
+            } else {
+                $('#check').removeClass('hidden').addClass('hidden');
+                isHidden = false;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center" style="width:auto;height:auto;font-weight:900;font-size:20pt;font-family:標楷體;">
+            預&emsp;約&emsp;乘&emsp;車&emsp;功&emsp;能&emsp;使&emsp;用&emsp;條&emsp;款
+        </h1>
+        <div style="border:2px solid;width:auto;height:auto;font-size:13pt;font-family:標楷體;">
+            <div>
+                歡迎使用南訓大車隊所提供之預約乘車功能。
+            </div>
+            <div>
+                為了保護您的權益，並為服務提供依據，請詳細閱讀本預約乘車功能使用條款之所有內容。
+            </div>
+            <div>南訓大車隊（下稱本車隊）預約乘車功能使用條款（版本:2017.05）</div>
+            <div>第一條：</div>
+            <div>使用人提供之訂單資料，同意由預約乘車功能之系統資料庫所保存。若有任何爭議，使用人同意以系統資料庫所保存之電子資料為認定標準。</div>
+            <br />
+            <div>第二條：</div>
+            <div>使用人同意以訂單資料所記載之行動電話作為搭載時本車隊隊員連絡之用。</div>
+            <br />
+            <div>第三條：</div>
+            <div>使用人應確保提供之訂單資料均屬真實（第一項）。</div>
+            <div>使用人若提供不實之訂單資料，本車隊將納入違規紀錄（第二項）。</div>
+            <div>前項情形，若違規紀錄已達三次，本車隊得拒絕使用人使用本預約乘車功能（第三項）。</div>
+            <br />
+            <div>第四條：</div>
+            <div>
+                使用人確認並送出訂單資料後，使用人或指定搭載之第三人，應於訂單資料所載之指定搭車時間至出發地點等候本車隊隊員（第一項）。
+            </div>
+            <div>
+                本車隊隊員到達訂單資料所載之指定出發地點時，至多停留五分鐘，若使用人或指定搭載之第三人於時限內仍未至搭乘，本車隊將納入違規紀錄，並準用前條第三項規定（第二項）。
+            </div>
+            <div>前項情形，於使用人取消訂單時，不適用之（第三項）。</div>
+            <br />
+            <div>第五條：</div>
+            <div>關於使用預約乘車功能所生之爭議，使用人同意以中華民國法律為準據法，且以高雄地方法院為管轄法院。</div>
+        </div>
+                <div class="checkbox">
+                    <label style="font-size:18pt;font-weight:800;">
+                        <input id="checkbox1" type="checkbox" data-title="勾選遵守內容方能進行預約乘車功能" />
+                        本人願意遵守南訓大車隊預約乘車功能使用條款之內容
+                    </label>
+                </div>
+            <div class="text-center">
+                <a href="Index.aspx" class="btn btn-default btn-lg">取消</a>&emsp;&emsp;
+                <a href="order.aspx" id="check" class="btn btn-danger btn-lg">確定</a>
+              
+            </div>
+    </div>
+</body>
+</html>

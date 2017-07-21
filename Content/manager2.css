@@ -1,0 +1,79 @@
+﻿
+body {
+    background-image: url('../Images/managerindex.png');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 900;
+    font-family: 微軟正黑體;
+    font-size: 20pt;
+    color:black;
+}
+#logo{
+    color: white;
+    font-size:30pt;
+}
+
+
+
+#myNavbar a{
+        color:white;
+     font-size:20pt;
+}
+
+
+/*.jumbotron h3,
+.jumbotron .h3{
+    color:white;
+}
+
+
+
+*/
+
+
+
+
+ /*.jumbotron h3,
+.jumbotron .h3{
+    color:white;
+    text-shadow:3px 3px 5px black;
+}
+
+.label{
+    font-size:12pt;
+}
+
+#home a{
+    width:100%;
+}
+
+#myNavbar a{
+    color: white;
+}
+
+#logo{
+    color: white;
+}*/
+
+
+/*#tablemag{
+
+          color:#000000;
+          font-weight: bold;
+          background-color: #00ff90;
+          font-family:Arial;
+          margin-left:auto; 
+          margin-right:auto;
+}
+#tablemag td{
+    background-color:#0FF;
+}
+#tablemag td:hover{
+    
+    background-color:#4cff00;
+}
+#tablemag a{
+    text-decoration: none;
+}*/
